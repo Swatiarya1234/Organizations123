@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Category:"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="19dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        card_view:cardBackgroundColor="#beb2bb"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_marginTop="45dp"
+        card_view:cardUseCompatPadding="true">
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="VALUES"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="131dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/table"
+            android:background="@drawable/roundedcorner"
+            android:layout_marginTop="45dp">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="7"
+                android:background="#ff9999">
+
+                <TextView
+                    android:id="@+id/Key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:text="Key"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/Value123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:text="Value"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardview_default_radius">
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Value1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_margin="@dimen/cardview_default_radius">
+                <TextView
+                    android:id="@+id/Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/Value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Value2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_margin="@dimen/cardview_default_radius">
+                <TextView
+                    android:id="@+id/PublicResponse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Public Response"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/Value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Value3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_margin="@dimen/cardview_default_radius">
+
+                <TextView
+                    android:id="@+id/Publicgists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Public gists"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/Value3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Value4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_margin="@dimen/cardview_default_radius">
+                <TextView
+                    android:id="@+id/repos_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Response Url"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/Value4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fFF"
+                    android:gravity="center"
+                    android:text="Value5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+
+        </TableLayout>
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/frame1">
+
+       </FrameLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
